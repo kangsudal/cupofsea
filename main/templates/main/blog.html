@@ -1,0 +1,13 @@
+<html>
+<body>
+blog page
+<table>
+	{% for list in postlist %}
+	<tr>
+		<td>{{list.postname}}</td>
+		<td>{{list.contents}}</td>
+	</tr>
+	{% endfor %}
+</table>
+</body>
+</html>

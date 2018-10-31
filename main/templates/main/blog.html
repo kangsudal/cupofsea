@@ -7,6 +7,7 @@ blog page
 		
 		<td><a href="{% url 'postdetails' list.pk%}">{{list.postname}}</a></td>
 		<td>{{list.contents}}</td>
+		<td>{{list.modifiedDate}}</td>
 		
 	</tr>
 	{% endfor %}

@@ -5,6 +5,7 @@
 	{% if postlist.mainphoto %}
 		<img src="{{ postlist.mainphoto.url }}">
 	{% endif %}
+	<p>{{postlist.tag.names.0}}</p>
 	<br>
 	<a href="{%url 'blog'%}">목록</a>
 	

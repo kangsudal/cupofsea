@@ -4,8 +4,10 @@ blog page
 <table>
 	{% for list in postlist %}
 	<tr>
-		<td>{{list.postname}}</td>
+		
+		<td><a href="{% url 'postdetails' list.pk%}">{{list.postname}}</a></td>
 		<td>{{list.contents}}</td>
+		
 	</tr>
 	{% endfor %}
 </table>

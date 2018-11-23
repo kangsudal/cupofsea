@@ -24,6 +24,10 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('blog/', views.blog, name='blog'),
     path('blog/<int:pk>/', views.postdetails, name='postdetails'),
+    path('blog/speaking/new', views.speaking_log, name='speaking_log'),
+    path('blog/listening/new', views.listening_log, name='listening_log'),
+    path('blog/writing/new', views.writing_log, name='writing_log'),
+    path('blog/reading/new', views.reading_log, name='reading_log'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
